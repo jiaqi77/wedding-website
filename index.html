@@ -565,7 +565,7 @@
 						
 						
 						
-						 <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="jiaqim1991@gmail.com"
+						 <form id="gform" method="POST" class="registry-form" data-email="jiaqim1991@gmail.com"
   action="https://script.google.com/macros/s/AKfycbx2-VwxgGxSNLmk0IdS6wtlJc7zUjAwhj2ekhNyIxrVTsRd7iCE/exec">
     <!-- change the form action to your script url -->
 	<!--
@@ -575,12 +575,25 @@
     </div> -->
 	<input placeholder="Your name" value="" id="name" name="name" type="text">
 
-    <div class="input-columns clearfix">
+	<div class="input-columns clearfix">
+        <div class="column-1">
+             <div class="column-inner">
+				  <input id="email" name="email" placeholder="Guest Number" value="" type="text">
+			</div>
+        </div>
+		<div class="column-2">
+			 <div class="column-inner">
+				<input id="color" name="color" placeholder="Attend or not" value="" type="text">
+			 </div>
+		</div>
+	</div>
+		
+  <div class="input-columns clearfix">
       <label for="message">Message: </label>
       <textarea id="message" name="message" rows="10"
       placeholder="What youw"></textarea>
     </div>
-
+<!--
     <div class="input-columns clearfix">
       <label for="email"><em>Your</em> Email Address:</label>
       <input id="email" name="email" value=""
@@ -596,7 +609,8 @@
 
     <button class="button-success pure-button button-xlarge">
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-
+-->
+   <input value="Iam Attending the wedding" class=" but submit" type="submit">
   </form>
 <div style="display:none;" id="thankyou_message">
     <h2><em>Thank you so much !</em></h2>
