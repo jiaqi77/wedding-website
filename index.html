@@ -568,11 +568,12 @@
 						 <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="jiaqim1991@gmail.com"
   action="https://script.google.com/macros/s/AKfycbx2-VwxgGxSNLmk0IdS6wtlJc7zUjAwhj2ekhNyIxrVTsRd7iCE/exec">
     <!-- change the form action to your script url -->
-
+	<!--
     <div class="input-columns clearfix">
       <label for="name">Your name: </label>
       <input id="name" name="name" />
-    </div>
+    </div> -->
+	<input placeholder="Your name" value="" id="name" name="name" type="text">
 
     <div class="input-columns clearfix">
       <label for="message">Message: </label>
@@ -597,13 +598,13 @@
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
   </form>
-
+<div style="display:none;" id="thankyou_message">
+    <h2><em>Thank you so much !</em></h2>
+  </div>
   <!-- Customise the Thankyou Message People See when they submit the form: -->
 
             </div>
-			  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thank you so much !</em></h2>
-  </div>
+	
                   </div>
                </div>
             </div>
