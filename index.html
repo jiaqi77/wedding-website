@@ -560,8 +560,11 @@
                   <div class="col-md-5 col-sm-5 ">
                      <div class="block-registry">
                         <h2 class="heavy normal mb-30">You can make your reservation for the wedding here</h2>
-                        <form class="registry-form " method="post" action="https://script.google.com/macros/s/AKfycbwTFsZoxCvsxfRk-wkU_S5QAUsvRV5vLnsMH7D2PIpOdImqEasz/exec">
-                           <input placeholder="Your name" value="" id="name" name="name" type="text">
+                        <form id='gform' class="registry-form " data-email="jiaqim1991@gmail.com" method="post" action="https://script.google.com/macros/s/AKfycbzommTLMR90VMrGvlATsd5J-DnU1v8OMvC5jlwLAC59sRTJj2w/exec">
+                           
+
+
+						<input placeholder="Your name" value="" id="name" name="name" type="text">
                            <!--Input columns-->
                            <div class="input-columns clearfix">
                               <div class="column-1">
@@ -586,6 +589,11 @@
                            <!--End input columns-->
                            <input value="Iam Attending the wedding" class=" but submit" type="submit">
                         </form>
+						<div style="display:none;" id="thankyou_message">
+							<h2><em>Thanks</em> for contacting us!
+								We will get back to you soon!</h2>
+						</div>
+						
                      </div>
                   </div>
                </div>
@@ -639,8 +647,9 @@
       <script src="js/script.js" type="text/javascript"></script>
       <!-- Google analytics -->
       <!-- End google analytics -->
-	  <script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+	 <!--
+	 <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
    </body>
 </html>
 
