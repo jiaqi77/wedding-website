@@ -560,39 +560,53 @@
                   <div class="col-md-5 col-sm-5 ">
                      <div class="block-registry">
                         <h2 class="heavy normal mb-30">You can make your reservation for the wedding here</h2>
-                        <form id='gform' class="registry-form " data-email="jiaqim1991@gmail.com" method="post" action="https://script.google.com/macros/s/AKfycbzommTLMR90VMrGvlATsd5J-DnU1v8OMvC5jlwLAC59sRTJj2w/exec">
-                           
+                  
+						
+						
+						
+						
+						 <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="jiaqim@umich.edu"
+  action="https://script.google.com/macros/s/AKfycbx2-VwxgGxSNLmk0IdS6wtlJc7zUjAwhj2ekhNyIxrVTsRd7iCE/exec">
+    <!-- change the form action to your script url -->
 
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="What your Mom calls you" />
+    </fieldset>
 
-						<input placeholder="Your name" value="" id="name" name="name" type="text">
-                           <!--Input columns-->
-                           <div class="input-columns clearfix">
-                              <div class="column-1">
-                                 <div class="column-inner">
-                                    <input placeholder="Guest number" value="" id="guest" name="guest" type="text">
-                                 </div>
-                              </div>
-                              <!--Column-->
-                              <div class="column-2">
-                                 <div class="column-inner select-input">
-                                    <select>
-                                       <option value="volvo">I'm attending...</option>
-                                       <option value="saab">All events</option>
-                                       <option value="mercedes">Wedding</option>
-                                       <option value="audi">Ceremony</option>
-                                       <option value="audi">I'm not attending</option>
-                                    </select>
-                                 </div>
-                              </div>
-                              <!--End column-->
-                           </div>
-                           <!--End input columns-->
-                           <input value="Iam Attending the wedding" class=" but submit" type="submit">
-                        </form>
-						<div style="display:none;" id="thankyou_message">
-							<h2><em>Thanks</em> for contacting us!
-								We will get back to you soon!</h2>
-						</div>
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="color">Favourite Color: </label>
+      <input id="color" name="color" placeholder="green" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+						
+						
+						
+						
 						
                      </div>
                   </div>
