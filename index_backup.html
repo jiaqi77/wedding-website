@@ -17,6 +17,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
    </head>
    <body>
       <!-- Preloader -->
@@ -211,11 +212,8 @@
 					 	<p> Dalian Fishing Port Resturant </P>
 						<p>7 Guangyu Rd, Pingshan Qu, Benxi Shi, Liaoning Sheng, China, 117000 </P>
 						<p> 3rd floow </p>
-					<div style="height: 200px; width: 50%; margin: auto" id="map">
-						centered content
-						</div>
+						<div id="map"></div>
                   </div>
-			
                </div>
                <!--end of row-->
             </div>
@@ -594,9 +592,9 @@
       <!-- Google analytics -->
 	  <script>
       function initMap() {
-        var uluru = {lat: 41.289068, lng: 123.763376};
+        var uluru = {lat: -25.363, lng: 131.044};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
+          zoom: 4,
           center: uluru
         });
         var marker = new google.maps.Marker({
