@@ -12,11 +12,13 @@
       <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
       <link href="css/venobox.css" rel="stylesheet" type="text/css"  media="all" />
       <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+	   <link href="css/custom.css" rel="stylesheet" type="text/css"  media="all" />
       <link href="https://fonts.googleapis.com/css?family=Kristi|Lato:100,300,300i,400,700" rel="stylesheet">
 	   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!-- Style The Contact Form How Ever You Prefer -->
+   <!-- Style The Contact Form How Ever You Prefer 
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+   -->
    </head>
    <body>
       <!-- Preloader -->
@@ -44,7 +46,9 @@
                      <h2>Jiaqi &amp; Zhuoran</h2>
                   </a>
                </div>
+			   
                <div class="right-part">
+					
                   <nav class="main-nav">
                      <div class="toggle-mobile-but">
                         <a href="#" class="mobile-but" >
@@ -52,7 +56,7 @@
                         </a>
                      </div>
                      <ul>
-						<li><a class="scroll" href="datong.html"><b>Datong</b></a></li>
+						<li><a class="scroll" href="datong.html"><b>Datong</b></a></li> 
                         <li><a class="scroll" href="#story">Love story</a></li>
                         <li><a class="scroll" href="#wedding">The wedding</a></li>
                         <li><a class="scroll" href="#album">Photo album</a></li>
@@ -71,11 +75,11 @@
                <div class="container hero-content">
                   <!--Row-->
 				  <div class="row">
-                     <div class="col-sm-12 text-center">
-                        <h1 class="large mb-20">Jiaqi&amp;Zhuoran</h1>
+                     <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+                        <h1 class="large mb-20 sm-20 xs-20">Jiaqi&amp;Zhuoran</h1>
                      </div>
                   <div class="row">
-                     <div class="col-sm-12 text-center">
+                     <div class="col-sm-12 col-md-12 col-xs-12 text-center">
                         <div class="block-date-hero">
                            <div class="circle-dashed bg-n">
                               <div class="round-circle">
@@ -201,7 +205,7 @@
                <!--Row-->
                <div class="row">
                   <div class="col-md-12  text-center mt-100">
-                     <a href="http://map.google.com" class="but">
+                     <a href="https://www.google.com/maps?q=dalian+fishing+port+7+Guangyu+Rd,+Pingshan+Qu,+Benxi+Shi,+Liaoning+Sheng,+China,+117000" class="but">
                         <span>Wedding location</span>
 					
                         <svg class="but-svg" width="175" height="50" viewBox="0 0 415 120" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +215,8 @@
 					 	<p> Dalian Fishing Port Resturant </P>
 						<p>7 Guangyu Rd, Pingshan Qu, Benxi Shi, Liaoning Sheng, China, 117000 </P>
 						<p> 3rd floow </p>
-					<div style="height: 200px; width: 50%; margin: auto" id="map">
+						<br></br>
+							  	<div style="height: 200px; width: 50%; margin: auto" id="map">
 						centered content
 						</div>
                   </div>
@@ -528,10 +533,13 @@
 	<input placeholder="Your name" value="" id="name" name="name" type="text">
 	<input id="email" name="email" placeholder="email address" value="" type="text">
 	<input id="color" name="color" placeholder="Attend or not" value="" type="text">
-      <textarea id="message" name="message" rows="10"
+     <textarea style="height: 120px; width: 100%"  id="message" name="message" row="10" 
+      placeholder="What you want to say to us" ></textarea>
+	  <!--
+	  <textarea id="message" name="message" rows="10"
       placeholder="What you want to say to us"></textarea>
-
-    <button class="button-success pure-button button-xlarge">
+      -->
+    <button class="button-success button-xlarge">
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
   </form>
 <div style="display:none;" id="thankyou_message">
