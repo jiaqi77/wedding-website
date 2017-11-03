@@ -527,7 +527,7 @@ h1.large {
 }
 .block-img a {
     height: 352px;
-    position: relative;
+    position: absolute;
     display: block;
 }
 .block-img a:before {
