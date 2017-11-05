@@ -36,6 +36,13 @@
                <h1 class="coverlarge mb-20">You Are Invited to Jiaqi&amp;Zhuoran's Wedding</h1>
 			   <h2 class="coverlarge mb-20">Please type your invitation code</h2>
 			   <h2 class="coverlarge mb-20">Please select the city you are going to attend</h2>
+		<form name="invitationform" onsubmit="return myFunctionRun()" method="POST" action="index.html" >         
+		<input type="text" name="invitationcode" id="invitationcode" />
+		<input type="submit" name="submitBt"value="Enter" />
+		</form>
+			   
+			   
+			   
             </div>
             <!--End inner hero-->
       </section>
@@ -48,5 +55,13 @@
       <!-- Google analytics -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script>
+	      function myFunctionRun() {
+        var invitationid = Number(document.getElementById('invitecode').value);
+		if (invitationid == 'jiaqi is cute'){
+		   return true;
+		   else{return false;}}
+		   }
+		</script>
 </body>
 </html>
