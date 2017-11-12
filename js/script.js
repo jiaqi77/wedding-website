@@ -92,7 +92,9 @@
     $('.countdown').countdown('2017/12/16', function(event) {
         $(this).html(event.strftime('%D days %H:%M:%S'));
     });
-
+   $('.countdown2').countdown('2017/12/24', function(event) {
+        $(this).html(event.strftime('%D days %H:%M:%S'));
+    });
 
     // Images zoom setup
 
